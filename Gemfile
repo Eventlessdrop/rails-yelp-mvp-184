@@ -5,6 +5,7 @@ ruby '2.4.4'
 
 
 gem 'bootstrap-sass'
+gem 'sassc-rails'
 gem 'font-awesome-sass', '~> 5.0.9'
 gem 'simple_form'
 gem 'autoprefixer-rails'

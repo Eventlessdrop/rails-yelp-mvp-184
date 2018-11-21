@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :restaurants, only: [:index, :show, :new, :create] do
-    resources :reviews, only: [:new, :create]
+  resources :restaurants do
+    resources :reviews, only: [ :index, :new, :create ]
   end
-  root to: "restaurants#index"
+  resources :reviews, only: [ :show, :edit, :update, :destroy ]
 end
+
